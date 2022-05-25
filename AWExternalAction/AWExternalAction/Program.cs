@@ -13,8 +13,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDigizuite(new DigizuiteConfiguration()
 {
     BaseUrl = new Uri("{*My-DAM-URL*}"),
-    SystemUsername = "superadministrator",
-    SystemPassword = "test",
+    SystemUsername = "{*My-DAM-UserName*}",
+    SystemPassword = "{*My-DAM-Password*}",
 })
     .UseConsoleLogger()
     .AutomaticallyDeclareCustomAutomationSteps()
