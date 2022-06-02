@@ -11,7 +11,7 @@ This projects contains examples of integrations with Digizuite API's
 ### Dependencies
 
 Digizuite products should be installed:
-- DAM
+- DAM (at least 5.6)
 - MM
 
 ### Installing
