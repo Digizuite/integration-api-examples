@@ -25,6 +25,12 @@ Clone the project to a local station and open it in Visual Studio
 * Configure DAM or MM connection settings
 * Build and run the project
 
+## Digizuite AW External Action Registration
+Read more [here](./AWExternalAction/README.md).
+
+## Digizuite DC API
+Read more [here](./DAM-API/README.md).
+
 ## Help
 
 For any additional information please see the link 
@@ -40,6 +46,8 @@ Digizuite Team [@Digizuite](https://digizuite.com/)
 * 0.1
 	* AW External Action registration example project
     * Initial Release
+* 0.2
+	* DC API Postman requests connection
 
 ## License
 
