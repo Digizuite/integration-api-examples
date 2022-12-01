@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "aa5fbd68-4708-46a3-b7b0-88a666318256",
-		"name": "Digizuite Content Search API (from 5.6.1)",
+		"_postman_id": "90035617-f814-47ad-8846-2aea5833c006",
+		"name": "Digizuite Content Search API (Official 5.7.0)",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -30,9 +30,9 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "{{baseAuthUrl}}/Dmm3BWSV3/ConnectService.js?method=LogOn&username={{username}}&password={{password}}",
+									"raw": "{{baseUrl}}/Dmm3BWSV3/ConnectService.js?method=LogOn&username={{username}}&password={{password}}",
 									"host": [
-										"{{baseAuthUrl}}"
+										"{{baseUrl}}"
 									],
 									"path": [
 										"Dmm3BWSV3",
@@ -93,11 +93,13 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{baseUrl}}/api/assets/:assetId?MetaFieldItemGuids=863e76d6-47de-acca-f3fd-3c520566d13e&MetaFieldItemGuids=urn:uuid:592b64d0-eb9e-34f9-d127-bbdd1e552542",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/assets/:assetId?MetaFieldItemGuids=863e76d6-47de-acca-f3fd-3c520566d13e&MetaFieldItemGuids=urn:uuid:592b64d0-eb9e-34f9-d127-bbdd1e552542",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"assets",
 												":assetId"
@@ -128,11 +130,13 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{baseUrl}}/api/assets/:assetId?MetaFieldItemGuids=urn:uuid:770dba00-5521-b50b-1ca8-f36d50d69450&MetaFieldItemGuids=urn:uuid:a6c2430d-27b2-7317-cc10-33af0b677412&AccessKey=<API Key>",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/assets/:assetId?MetaFieldItemGuids=urn:uuid:770dba00-5521-b50b-1ca8-f36d50d69450&MetaFieldItemGuids=urn:uuid:a6c2430d-27b2-7317-cc10-33af0b677412&AccessKey=<API Key>",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"assets",
 														":assetId"
@@ -187,11 +191,13 @@
 											"raw": "{\n    \"filename\": \"cupidatat veniam\",\n    \"metadata\": 1\n}"
 										},
 										"url": {
-											"raw": "{{baseUrl}}/api/assets/:assetId/create-version",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/assets/:assetId/create-version",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"assets",
 												":assetId",
@@ -217,11 +223,13 @@
 													"raw": "{\n    \"filename\": \"cupidatat veniam\",\n    \"metadata\": 1\n}"
 												},
 												"url": {
-													"raw": "{{baseUrl}}/api/assets/:assetId/create-version?AccessKey=<API Key>",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/assets/:assetId/create-version?AccessKey=<API Key>",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"assets",
 														":assetId",
@@ -274,11 +282,13 @@
 											"raw": "{\n    \"sortBy\": [\n        {\n            \"searchKey\": \"\",\n            \"order\": \"Ascending\"\n        },\n        {\n            \"searchKey\": \"enim nulla pariatur est\",\n            \"order\": \"Descending\"\n        }\n    ],\n    \"facetFields\": [\n        {\n            \"searchKey\": \"enim labore\",\n            \"search\": \"sit U\",\n            \"values\": [\n                \"sunt consectetur fugiat consequat\",\n                \"cillum esse non magna ipsum\"\n            ],\n            \"excluded\": [\n                \"sed occaecat consectetur ut\",\n                \"deserunt sint consequat proident dolor\"\n            ],\n            \"operation\": \"Or\",\n            \"longRange\": {\n                \"from\": {\n                    \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                },\n                \"to\": {\n                    \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                }\n            },\n            \"doubleRange\": {\n                \"from\": {\n                    \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                },\n                \"to\": {\n                    \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                }\n            },\n            \"dateRange\": {\n                \"from\": {\n                    \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                },\n                \"to\": {\n                    \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                }\n            },\n            \"facetMode\": \"Facet\",\n            \"recursive\": false,\n            \"missingValueHandling\": \"HideEmpty\",\n            \"doubleExactSearchRange\": -48658616.17336375\n        },\n        {\n            \"searchKey\": \"Ut ad deserunt eiusmod\",\n            \"search\": \"dolor\",\n            \"values\": [\n                \"aliquip ut reprehen\",\n                \"enim Ut\"\n            ],\n            \"excluded\": [\n                \"anim\",\n                \"in exercitation\"\n            ],\n            \"operation\": \"And\",\n            \"longRange\": {\n                \"from\": {\n                    \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                },\n                \"to\": {\n                    \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                }\n            },\n            \"doubleRange\": {\n                \"from\": {\n                    \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                },\n                \"to\": {\n                    \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                }\n            },\n            \"dateRange\": {\n                \"from\": {\n                    \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                },\n                \"to\": {\n                    \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                }\n            },\n            \"facetMode\": \"QueryOnly\",\n            \"recursive\": false,\n            \"missingValueHandling\": \"OnlyShowEmpty\",\n            \"doubleExactSearchRange\": 37002151.74211699\n        }\n    ],\n    \"metaFieldItemGuids\": [\n        \"urn:uuid:bd7130fd-8597-d1d9-7548-b6a5fd118d83\",\n        \"f6f4e0de-b36e-3286-d6bf-d08261c7b287\"\n    ],\n    \"freeText\": \"laboris id\",\n    \"defaultFreeTextOperation\": \"And\",\n    \"freeTextOnFields\": [\n        \"Lorem\",\n        \"in deserunt sit ullamco\"\n    ],\n    \"count\": 7496,\n    \"skip\": 4889,\n    \"languageId\": 66260941,\n    \"calculateTrueCount\": true\n}"
 										},
 										"url": {
-											"raw": "{{baseUrl}}/api/assets/search",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/assets/search",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"assets",
 												"search"
@@ -296,11 +306,13 @@
 													"raw": "{\n    \"sortBy\": [\n        {\n            \"searchKey\": \"ad enim\",\n            \"order\": \"Ascending\"\n        },\n        {\n            \"searchKey\": \"magna sunt non ea sit\",\n            \"order\": \"Ascending\"\n        }\n    ],\n    \"facetFields\": [\n        {\n            \"searchKey\": \"consequat enim id aute adipisicing\",\n            \"search\": \"in culpa\",\n            \"values\": [\n                \"in qui ullamco in\",\n                \"dolor fugiat\"\n            ],\n            \"excluded\": [\n                \"dolor cupidatat \",\n                \"pariatur nulla adipisicing aliq\"\n            ],\n            \"operation\": \"And\",\n            \"longRange\": {\n                \"from\": {\n                    \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                },\n                \"to\": {\n                    \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                }\n            },\n            \"doubleRange\": {\n                \"from\": {\n                    \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                },\n                \"to\": {\n                    \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                }\n            },\n            \"dateRange\": {\n                \"from\": {\n                    \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                },\n                \"to\": {\n                    \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                }\n            },\n            \"facetMode\": \"QueryOnly\",\n            \"recursive\": true,\n            \"missingValueHandling\": \"OnlyShowEmpty\",\n            \"doubleExactSearchRange\": -5680444.587102458\n        },\n        {\n            \"searchKey\": \"id\",\n            \"search\": \"esse Ut mollit\",\n            \"values\": [\n                \"et irure id est\",\n                \"proident exe\"\n            ],\n            \"excluded\": [\n                \"sed irure quis magna\",\n                \"culpa ut Excepteur adipisicing\"\n            ],\n            \"operation\": \"Or\",\n            \"longRange\": {\n                \"from\": {\n                    \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                },\n                \"to\": {\n                    \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                }\n            },\n            \"doubleRange\": {\n                \"from\": {\n                    \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                },\n                \"to\": {\n                    \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                }\n            },\n            \"dateRange\": {\n                \"from\": {\n                    \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                },\n                \"to\": {\n                    \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                }\n            },\n            \"facetMode\": \"Facet\",\n            \"recursive\": false,\n            \"missingValueHandling\": \"HideEmpty\",\n            \"doubleExactSearchRange\": -77096076.20342211\n        }\n    ],\n    \"metaFieldItemGuids\": [\n        \"b4142253-b86a-d4ea-8ff1-be444a026f5f\",\n        \"urn:uuid:ffac5fa2-a7da-59f7-18b8-1b82ed5084eb\"\n    ],\n    \"freeText\": \"consequat irure tempor\",\n    \"defaultFreeTextOperation\": \"And\",\n    \"freeTextOnFields\": [\n        \"elit\",\n        \"Duis commodo dolore\"\n    ],\n    \"count\": 8437,\n    \"skip\": 1498,\n    \"languageId\": 6467014,\n    \"calculateTrueCount\": true\n}"
 												},
 												"url": {
-													"raw": "{{baseUrl}}/api/assets/search?AccessKey=<API Key>",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/assets/search?AccessKey=<API Key>",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"assets",
 														"search"
@@ -333,11 +345,13 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{baseUrl}}/api/assets/search/meta",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/assets/search/meta",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"assets",
 												"search",
@@ -352,11 +366,13 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{baseUrl}}/api/assets/search/meta?AccessKey=<API Key>",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/assets/search/meta?AccessKey=<API Key>",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"assets",
 														"search",
@@ -401,11 +417,13 @@
 									"raw": "{\n    \"filename\": \"sed incididunt ad eu\",\n    \"uploadComputer\": \"nostrud aliquip in\"\n}"
 								},
 								"url": {
-									"raw": "{{baseUrl}}/api/assets",
+									"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/assets",
 									"host": [
 										"{{baseUrl}}"
 									],
 									"path": [
+										"digizuitecore",
+										"legacyservice",
 										"api",
 										"assets"
 									]
@@ -422,11 +440,13 @@
 											"raw": "{\n    \"filename\": \"sed incididunt ad eu\",\n    \"uploadComputer\": \"nostrud aliquip in\"\n}"
 										},
 										"url": {
-											"raw": "{{baseUrl}}/api/assets?AccessKey=<API Key>",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/assets?AccessKey=<API Key>",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"assets"
 											],
@@ -467,11 +487,13 @@
 									"raw": "{\n    \"fileNames\": [\n        \"reprehend\",\n        \"laboris Ut ad pariatur\"\n    ],\n    \"uploadComputer\": \"velit\"\n}"
 								},
 								"url": {
-									"raw": "{{baseUrl}}/api/assets/bulk-create",
+									"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/assets/bulk-create",
 									"host": [
 										"{{baseUrl}}"
 									],
 									"path": [
+										"digizuitecore",
+										"legacyservice",
 										"api",
 										"assets",
 										"bulk-create"
@@ -489,11 +511,13 @@
 											"raw": "{\n    \"fileNames\": [\n        \"proident cupidatat s\",\n        \"aliqua velit s\"\n    ],\n    \"uploadComputer\": \"veniam\"\n}"
 										},
 										"url": {
-											"raw": "{{baseUrl}}/api/assets/bulk-create?AccessKey=<API Key>",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/assets/bulk-create?AccessKey=<API Key>",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"assets",
 												"bulk-create"
@@ -535,11 +559,13 @@
 									"raw": "{\n    \"metaFieldItemGuids\": [\n        \"bd12c217-9f80-82a0-6077-032cd7c30731\",\n        \"59a87961-9a48-1109-d16f-06c54f399dec\"\n    ],\n    \"assetIds\": [\n        2507346,\n        15667625\n    ],\n    \"itemIds\": [\n        -71172211,\n        46840699\n    ],\n    \"itemGuids\": [\n        \"59d5f15b-9da8-9b13-9860-5275427bc20b\",\n        \"2f383e65-0e1b-cf04-c247-bb3167dfa0d9\"\n    ]\n}"
 								},
 								"url": {
-									"raw": "{{baseUrl}}/api/assets/bulk-get",
+									"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/assets/bulk-get",
 									"host": [
 										"{{baseUrl}}"
 									],
 									"path": [
+										"digizuitecore",
+										"legacyservice",
 										"api",
 										"assets",
 										"bulk-get"
@@ -557,11 +583,13 @@
 											"raw": "{\n    \"metaFieldItemGuids\": [\n        \"urn:uuid:7113e261-da5b-8356-7970-19322630a5cc\",\n        \"a7edf4d5-8a99-ae29-850b-0c627315030e\"\n    ],\n    \"assetIds\": [\n        99249541,\n        -49201377\n    ],\n    \"itemIds\": [\n        -82299673,\n        62942490\n    ],\n    \"itemGuids\": [\n        \"urn:uuid:eb3bc0e1-1aa7-64e0-7d0c-45b93198812f\",\n        \"7f90b9e1-158e-7aac-80dc-09352ea003c0\"\n    ]\n}"
 										},
 										"url": {
-											"raw": "{{baseUrl}}/api/assets/bulk-get?AccessKey=<API Key>",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/assets/bulk-get?AccessKey=<API Key>",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"assets",
 												"bulk-get"
@@ -603,11 +631,13 @@
 									"raw": "{\n    \"assets\": [\n        {\n            \"assetId\": -40004767,\n            \"filename\": \"in ipsum ad\"\n        },\n        {\n            \"assetId\": 90335242,\n            \"filename\": \"cillum\"\n        }\n    ],\n    \"metadata\": 0\n}"
 								},
 								"url": {
-									"raw": "{{baseUrl}}/api/assets/create-versions",
+									"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/assets/create-versions",
 									"host": [
 										"{{baseUrl}}"
 									],
 									"path": [
+										"digizuitecore",
+										"legacyservice",
 										"api",
 										"assets",
 										"create-versions"
@@ -625,11 +655,13 @@
 											"raw": "{\n    \"assets\": [\n        {\n            \"assetId\": 98705952,\n            \"filename\": \"pariatur laboris incididunt esse culpa\"\n        },\n        {\n            \"assetId\": -26964911,\n            \"filename\": \"in nisi u\"\n        }\n    ],\n    \"metadata\": 1\n}"
 										},
 										"url": {
-											"raw": "{{baseUrl}}/api/assets/create-versions?AccessKey=<API Key>",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/assets/create-versions?AccessKey=<API Key>",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"assets",
 												"create-versions"
@@ -671,11 +703,13 @@
 									"raw": "{\n    \"values\": [\n        \"Duis dolor\"\n    ]\n}"
 								},
 								"url": {
-									"raw": "{{baseUrl}}/api/assets/duplicates",
+									"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/assets/duplicates",
 									"host": [
 										"{{baseUrl}}"
 									],
 									"path": [
+										"digizuitecore",
+										"legacyservice",
 										"api",
 										"assets",
 										"duplicates"
@@ -693,11 +727,13 @@
 											"raw": "{\n    \"values\": [\n        \"Duis dolor\"\n    ]\n}"
 										},
 										"url": {
-											"raw": "{{baseUrl}}/api/assets/duplicates?AccessKey=<API Key>",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/assets/duplicates?AccessKey=<API Key>",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"assets",
 												"duplicates"
@@ -741,11 +777,13 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/channelfolders/:channelFolderId",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/channelfolders/:channelFolderId",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"channelfolders",
@@ -767,11 +805,13 @@
 														"method": "GET",
 														"header": [],
 														"url": {
-															"raw": "{{baseUrl}}/api/admin/channelfolders/:channelFolderId?AccessKey=<API Key>",
+															"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/channelfolders/:channelFolderId?AccessKey=<API Key>",
 															"host": [
 																"{{baseUrl}}"
 															],
 															"path": [
+																"digizuitecore",
+																"legacyservice",
 																"api",
 																"admin",
 																"channelfolders",
@@ -819,11 +859,13 @@
 													"raw": "{\n    \"name\": \"incididunt dolor Excepteur voluptate\",\n    \"parentId\": -24529619,\n    \"itemGuid\": \"urn:uuid:1b139163-cd64-ee00-287f-07f72d2542f3\"\n}"
 												},
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/channelfolders/:channelFolderId",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/channelfolders/:channelFolderId",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"channelfolders",
@@ -849,11 +891,13 @@
 															"raw": "{\n    \"name\": \"incididunt dolor Excepteur voluptate\",\n    \"parentId\": -24529619,\n    \"itemGuid\": \"urn:uuid:1b139163-cd64-ee00-287f-07f72d2542f3\"\n}"
 														},
 														"url": {
-															"raw": "{{baseUrl}}/api/admin/channelfolders/:channelFolderId?AccessKey=<API Key>",
+															"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/channelfolders/:channelFolderId?AccessKey=<API Key>",
 															"host": [
 																"{{baseUrl}}"
 															],
 															"path": [
+																"digizuitecore",
+																"legacyservice",
 																"api",
 																"admin",
 																"channelfolders",
@@ -892,11 +936,13 @@
 												"method": "DELETE",
 												"header": [],
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/channelfolders/:channelFolderId",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/channelfolders/:channelFolderId",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"channelfolders",
@@ -918,11 +964,13 @@
 														"method": "DELETE",
 														"header": [],
 														"url": {
-															"raw": "{{baseUrl}}/api/admin/channelfolders/:channelFolderId?AccessKey=<API Key>",
+															"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/channelfolders/:channelFolderId?AccessKey=<API Key>",
 															"host": [
 																"{{baseUrl}}"
 															],
 															"path": [
+																"digizuitecore",
+																"legacyservice",
 																"api",
 																"admin",
 																"channelfolders",
@@ -963,11 +1011,13 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{baseUrl}}/api/admin/channelfolders",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/channelfolders",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"admin",
 												"channelfolders"
@@ -981,11 +1031,13 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/channelfolders?AccessKey=<API Key>",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/channelfolders?AccessKey=<API Key>",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"channelfolders"
@@ -1027,11 +1079,13 @@
 											"raw": "{\n    \"parentId\": -2511358,\n    \"name\": \"commodo\",\n    \"itemGuid\": \"5dc2c685-4dae-5d93-df25-7b22dceed354\"\n}"
 										},
 										"url": {
-											"raw": "{{baseUrl}}/api/admin/channelfolders",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/channelfolders",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"admin",
 												"channelfolders"
@@ -1049,11 +1103,13 @@
 													"raw": "{\n    \"parentId\": -2511358,\n    \"name\": \"commodo\",\n    \"itemGuid\": \"5dc2c685-4dae-5d93-df25-7b22dceed354\"\n}"
 												},
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/channelfolders?AccessKey=<API Key>",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/channelfolders?AccessKey=<API Key>",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"channelfolders"
@@ -1103,11 +1159,13 @@
 													"raw": "{\n    \"optionValue\": \"in qui ea eu\",\n    \"sortIndex\": 38822173,\n    \"comboId\": 33913553\n}"
 												},
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/combo-values/:comboId",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/combo-values/:comboId",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"combo-values",
@@ -1133,11 +1191,13 @@
 															"raw": "{\n    \"optionValue\": \"in qui ea eu\",\n    \"sortIndex\": 38822173,\n    \"comboId\": 33913553\n}"
 														},
 														"url": {
-															"raw": "{{baseUrl}}/api/admin/combo-values/:comboId?AccessKey=<API Key>",
+															"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/combo-values/:comboId?AccessKey=<API Key>",
 															"host": [
 																"{{baseUrl}}"
 															],
 															"path": [
+																"digizuitecore",
+																"legacyservice",
 																"api",
 																"admin",
 																"combo-values",
@@ -1176,11 +1236,13 @@
 												"method": "DELETE",
 												"header": [],
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/combo-values/:comboId?synchronous=false",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/combo-values/:comboId?synchronous=false",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"combo-values",
@@ -1208,11 +1270,13 @@
 														"method": "DELETE",
 														"header": [],
 														"url": {
-															"raw": "{{baseUrl}}/api/admin/combo-values/:comboId?synchronous=true&AccessKey=<API Key>",
+															"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/combo-values/:comboId?synchronous=true&AccessKey=<API Key>",
 															"host": [
 																"{{baseUrl}}"
 															],
 															"path": [
+																"digizuitecore",
+																"legacyservice",
 																"api",
 																"admin",
 																"combo-values",
@@ -1255,11 +1319,13 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/combo-values/:comboId?kind=2",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/combo-values/:comboId?kind=2",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"combo-values",
@@ -1287,11 +1353,13 @@
 														"method": "GET",
 														"header": [],
 														"url": {
-															"raw": "{{baseUrl}}/api/admin/combo-values/:comboId?kind=2&AccessKey=<API Key>",
+															"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/combo-values/:comboId?kind=2&AccessKey=<API Key>",
 															"host": [
 																"{{baseUrl}}"
 															],
 															"path": [
+																"digizuitecore",
+																"legacyservice",
 																"api",
 																"admin",
 																"combo-values",
@@ -1343,11 +1411,13 @@
 													"raw": "{\n    \"label\": \"do laboris\"\n}"
 												},
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/combo-values/:comboId/:languageId",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/combo-values/:comboId/:languageId",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"combo-values",
@@ -1379,11 +1449,13 @@
 															"raw": "{\n    \"label\": \"do laboris\"\n}"
 														},
 														"url": {
-															"raw": "{{baseUrl}}/api/admin/combo-values/:comboId/:languageId?AccessKey=<API Key>",
+															"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/combo-values/:comboId/:languageId?AccessKey=<API Key>",
 															"host": [
 																"{{baseUrl}}"
 															],
 															"path": [
+																"digizuitecore",
+																"legacyservice",
 																"api",
 																"admin",
 																"combo-values",
@@ -1437,11 +1509,13 @@
 											"raw": "{\n    \"labels\": [\n        {\n            \"label\": \"consectetur et adipisicing elit\",\n            \"languageId\": 44049935\n        },\n        {\n            \"label\": \"amet labore mollit voluptate\",\n            \"languageId\": -66186622\n        }\n    ],\n    \"optionValue\": \"dolore nostrud Lorem laboris\",\n    \"sortIndex\": -86039736,\n    \"metaFieldId\": -88798137,\n    \"acceptableFieldKind\": 2\n}"
 										},
 										"url": {
-											"raw": "{{baseUrl}}/api/admin/combo-values",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/combo-values",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"admin",
 												"combo-values"
@@ -1459,11 +1533,13 @@
 													"raw": "{\n    \"labels\": [\n        {\n            \"label\": \"dolore\",\n            \"languageId\": -26572928\n        },\n        {\n            \"label\": \"in\",\n            \"languageId\": -93678029\n        }\n    ],\n    \"optionValue\": \"occaecat pariatur irure D\",\n    \"sortIndex\": -63650962,\n    \"metaFieldId\": -62803475,\n    \"acceptableFieldKind\": 1\n}"
 												},
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/combo-values?AccessKey=<API Key>",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/combo-values?AccessKey=<API Key>",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"combo-values"
@@ -1496,11 +1572,13 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{baseUrl}}/api/admin/combo-values?kind=2",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/combo-values?kind=2",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"admin",
 												"combo-values"
@@ -1520,11 +1598,13 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/combo-values?kind=2&AccessKey=<API Key>",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/combo-values?kind=2&AccessKey=<API Key>",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"combo-values"
@@ -1570,11 +1650,13 @@
 											"raw": "[\n    {\n        \"labels\": [\n            {\n                \"label\": \"culpa incididunt Duis\",\n                \"languageId\": 70371988\n            },\n            {\n                \"label\": \"ipsum do\",\n                \"languageId\": 6862743\n            }\n        ],\n        \"optionValue\": \"consectetur nostrud exercitation\",\n        \"sortIndex\": 29151169,\n        \"metaFieldId\": -35071493,\n        \"acceptableFieldKind\": 0\n    },\n    {\n        \"labels\": [\n            {\n                \"label\": \"dolor non commodo exercitation\",\n                \"languageId\": 32596302\n            },\n            {\n                \"label\": \"sint ut ea\",\n                \"languageId\": -85314566\n            }\n        ],\n        \"optionValue\": \"consectetur Duis nulla laborum\",\n        \"sortIndex\": -14750667,\n        \"metaFieldId\": 14450489,\n        \"acceptableFieldKind\": 0\n    }\n]"
 										},
 										"url": {
-											"raw": "{{baseUrl}}/api/admin/combo-values/bulk-create",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/combo-values/bulk-create",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"admin",
 												"combo-values",
@@ -1593,11 +1675,13 @@
 													"raw": "[\n    {\n        \"labels\": [\n            {\n                \"label\": \"quis proident qui labore enim\",\n                \"languageId\": 6576413\n            },\n            {\n                \"label\": \"cupidatat nisi laboris\",\n                \"languageId\": -78701620\n            }\n        ],\n        \"optionValue\": \"ex aliqua\",\n        \"sortIndex\": -85098926,\n        \"metaFieldId\": -93421197,\n        \"acceptableFieldKind\": 2\n    },\n    {\n        \"labels\": [\n            {\n                \"label\": \"elit voluptate ipsum\",\n                \"languageId\": -30433709\n            },\n            {\n                \"label\": \"Lore\",\n                \"languageId\": -27052955\n            }\n        ],\n        \"optionValue\": \"ut aute dolor\",\n        \"sortIndex\": 40876554,\n        \"metaFieldId\": 62298122,\n        \"acceptableFieldKind\": 0\n    }\n]"
 												},
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/combo-values/bulk-create?AccessKey=<API Key>",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/combo-values/bulk-create?AccessKey=<API Key>",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"combo-values",
@@ -1631,11 +1715,13 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{baseUrl}}/api/admin/combo-values/metafield/:metafieldid",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/combo-values/metafield/:metafieldid",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"admin",
 												"combo-values",
@@ -1658,11 +1744,13 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/combo-values/metafield/:metafieldid?AccessKey=<API Key>",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/combo-values/metafield/:metafieldid?AccessKey=<API Key>",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"combo-values",
@@ -1710,11 +1798,13 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/metafield/:metafieldId",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafield/:metafieldId",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"metafield",
@@ -1736,11 +1826,13 @@
 														"method": "GET",
 														"header": [],
 														"url": {
-															"raw": "{{baseUrl}}/api/admin/metafield/:metafieldId?AccessKey=<API Key>",
+															"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafield/:metafieldId?AccessKey=<API Key>",
 															"host": [
 																"{{baseUrl}}"
 															],
 															"path": [
+																"digizuitecore",
+																"legacyservice",
 																"api",
 																"admin",
 																"metafield",
@@ -1779,11 +1871,13 @@
 												"method": "DELETE",
 												"header": [],
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/metafield/:metafieldId",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafield/:metafieldId",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"metafield",
@@ -1805,11 +1899,13 @@
 														"method": "DELETE",
 														"header": [],
 														"url": {
-															"raw": "{{baseUrl}}/api/admin/metafield/:metafieldId?AccessKey=<API Key>",
+															"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafield/:metafieldId?AccessKey=<API Key>",
 															"host": [
 																"{{baseUrl}}"
 															],
 															"path": [
+																"digizuitecore",
+																"legacyservice",
 																"api",
 																"admin",
 																"metafield",
@@ -1857,11 +1953,13 @@
 													"raw": "{\n    \"name\": \"dolor culpa aliquip nisi\",\n    \"sortIndex\": -14147529,\n    \"visibilityMetaFieldId\": -38639570,\n    \"visibilityRegex\": \"Duis nulla sit\",\n    \"required\": true,\n    \"readonly\": true,\n    \"showInList\": false,\n    \"system\": true,\n    \"autoTranslate\": 4,\n    \"groupId\": -16875175,\n    \"restrictToAssetType\": 101,\n    \"uploadTagName\": \"deseru\",\n    \"guid\": \"0b099451-f41c-5349-33fa-0ce57d8c5881\",\n    \"iterative\": false\n}"
 												},
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/metafield/:metafieldId",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafield/:metafieldId",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"metafield",
@@ -1887,11 +1985,13 @@
 															"raw": "{\n    \"name\": \"dolor culpa aliquip nisi\",\n    \"sortIndex\": -14147529,\n    \"visibilityMetaFieldId\": -38639570,\n    \"visibilityRegex\": \"Duis nulla sit\",\n    \"required\": true,\n    \"readonly\": true,\n    \"showInList\": false,\n    \"system\": true,\n    \"autoTranslate\": 4,\n    \"groupId\": -16875175,\n    \"restrictToAssetType\": 101,\n    \"uploadTagName\": \"deseru\",\n    \"guid\": \"0b099451-f41c-5349-33fa-0ce57d8c5881\",\n    \"iterative\": false\n}"
 														},
 														"url": {
-															"raw": "{{baseUrl}}/api/admin/metafield/:metafieldId?AccessKey=<API Key>",
+															"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafield/:metafieldId?AccessKey=<API Key>",
 															"host": [
 																"{{baseUrl}}"
 															],
 															"path": [
+																"digizuitecore",
+																"legacyservice",
 																"api",
 																"admin",
 																"metafield",
@@ -1932,11 +2032,13 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{baseUrl}}/api/admin/metafield?metaFieldItemGuids=0f707f9e-f1bd-68ec-b3f7-c5f6e73e84ab&metaFieldItemGuids=urn:uuid:8bcbcf28-f3ef-be0e-c5d6-4b1cd74af722&metaFieldTypes=68&metaFieldTypes=100&respectShowInList=false",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafield?metaFieldItemGuids=0f707f9e-f1bd-68ec-b3f7-c5f6e73e84ab&metaFieldItemGuids=urn:uuid:8bcbcf28-f3ef-be0e-c5d6-4b1cd74af722&metaFieldTypes=68&metaFieldTypes=100&respectShowInList=false",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"admin",
 												"metafield"
@@ -1972,11 +2074,13 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/metafield?metaFieldItemGuids=b270d897-425c-2319-d735-b29764261649&metaFieldItemGuids=a5865890-09d4-2706-3ff2-a49913800f3d&metaFieldTypes=81&metaFieldTypes=60&respectShowInList=false&AccessKey=<API Key>",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafield?metaFieldItemGuids=b270d897-425c-2319-d735-b29764261649&metaFieldItemGuids=a5865890-09d4-2706-3ff2-a49913800f3d&metaFieldTypes=81&metaFieldTypes=60&respectShowInList=false&AccessKey=<API Key>",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"metafield"
@@ -2038,11 +2142,13 @@
 											"raw": "{\n    \"name\": \"est velit voluptate deser\",\n    \"groupId\": 819387206,\n    \"dataType\": 61,\n    \"sortIndex\": 6453879,\n    \"visibilityMetaFieldId\": -61820652,\n    \"visibilityRegex\": \"ad ut id p\",\n    \"required\": true,\n    \"readonly\": false,\n    \"showInList\": true,\n    \"system\": false,\n    \"autoTranslate\": 4,\n    \"restrictToAssetType\": 22,\n    \"uploadTagName\": \"dolor id consectetur Duis\",\n    \"guid\": \"3a96b22d-8ae6-ac10-a358-34374aed4821\",\n    \"iterative\": false\n}"
 										},
 										"url": {
-											"raw": "{{baseUrl}}/api/admin/metafield",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafield",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"admin",
 												"metafield"
@@ -2060,11 +2166,13 @@
 													"raw": "{\n    \"name\": \"est velit voluptate deser\",\n    \"groupId\": 819387206,\n    \"dataType\": 61,\n    \"sortIndex\": 6453879,\n    \"visibilityMetaFieldId\": -61820652,\n    \"visibilityRegex\": \"ad ut id p\",\n    \"required\": true,\n    \"readonly\": false,\n    \"showInList\": true,\n    \"system\": false,\n    \"autoTranslate\": 4,\n    \"restrictToAssetType\": 22,\n    \"uploadTagName\": \"dolor id consectetur Duis\",\n    \"guid\": \"3a96b22d-8ae6-ac10-a358-34374aed4821\",\n    \"iterative\": false\n}"
 												},
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/metafield?AccessKey=<API Key>",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafield?AccessKey=<API Key>",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"metafield"
@@ -2105,11 +2213,13 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/metafieldgroup/:metafieldGroupId",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafieldgroup/:metafieldGroupId",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"metafieldgroup",
@@ -2131,11 +2241,13 @@
 														"method": "GET",
 														"header": [],
 														"url": {
-															"raw": "{{baseUrl}}/api/admin/metafieldgroup/:metafieldGroupId?AccessKey=<API Key>",
+															"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafieldgroup/:metafieldGroupId?AccessKey=<API Key>",
 															"host": [
 																"{{baseUrl}}"
 															],
 															"path": [
+																"digizuitecore",
+																"legacyservice",
 																"api",
 																"admin",
 																"metafieldgroup",
@@ -2183,11 +2295,13 @@
 													"raw": "{\n    \"name\": \"do eiusmod ex\",\n    \"description\": \"id elit qui irure adipisicing\",\n    \"showInList\": false,\n    \"sortIndex\": 51942792,\n    \"restrictToAssetType\": 109,\n    \"labels\": {},\n    \"folderId\": 92581468,\n    \"parentGroupId\": 57591911,\n    \"iterative\": true\n}"
 												},
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/metafieldgroup/:metafieldGroupId",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafieldgroup/:metafieldGroupId",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"metafieldgroup",
@@ -2213,11 +2327,13 @@
 															"raw": "{\n    \"name\": \"do eiusmod ex\",\n    \"description\": \"id elit qui irure adipisicing\",\n    \"showInList\": false,\n    \"sortIndex\": 51942792,\n    \"restrictToAssetType\": 109,\n    \"labels\": {},\n    \"folderId\": 92581468,\n    \"parentGroupId\": 57591911,\n    \"iterative\": true\n}"
 														},
 														"url": {
-															"raw": "{{baseUrl}}/api/admin/metafieldgroup/:metafieldGroupId?AccessKey=<API Key>",
+															"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafieldgroup/:metafieldGroupId?AccessKey=<API Key>",
 															"host": [
 																"{{baseUrl}}"
 															],
 															"path": [
+																"digizuitecore",
+																"legacyservice",
 																"api",
 																"admin",
 																"metafieldgroup",
@@ -2256,11 +2372,13 @@
 												"method": "DELETE",
 												"header": [],
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/metafieldgroup/:metafieldGroupId",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafieldgroup/:metafieldGroupId",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"metafieldgroup",
@@ -2282,11 +2400,13 @@
 														"method": "DELETE",
 														"header": [],
 														"url": {
-															"raw": "{{baseUrl}}/api/admin/metafieldgroup/:metafieldGroupId?AccessKey=<API Key>",
+															"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafieldgroup/:metafieldGroupId?AccessKey=<API Key>",
 															"host": [
 																"{{baseUrl}}"
 															],
 															"path": [
+																"digizuitecore",
+																"legacyservice",
 																"api",
 																"admin",
 																"metafieldgroup",
@@ -2327,11 +2447,13 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{baseUrl}}/api/admin/metafieldgroup",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafieldgroup",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"admin",
 												"metafieldgroup"
@@ -2345,11 +2467,13 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/metafieldgroup?AccessKey=<API Key>",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafieldgroup?AccessKey=<API Key>",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"metafieldgroup"
@@ -2391,11 +2515,13 @@
 											"raw": "{\n    \"name\": \"do eiusmod ex\",\n    \"description\": \"id elit qui irure adipisicing\",\n    \"showInList\": false,\n    \"sortIndex\": 51942792,\n    \"restrictToAssetType\": 109,\n    \"labels\": {},\n    \"folderId\": 92581468,\n    \"parentGroupId\": 57591911,\n    \"iterative\": true\n}"
 										},
 										"url": {
-											"raw": "{{baseUrl}}/api/admin/metafieldgroup",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafieldgroup",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"admin",
 												"metafieldgroup"
@@ -2413,11 +2539,13 @@
 													"raw": "{\n    \"name\": \"do eiusmod ex\",\n    \"description\": \"id elit qui irure adipisicing\",\n    \"showInList\": false,\n    \"sortIndex\": 51942792,\n    \"restrictToAssetType\": 109,\n    \"labels\": {},\n    \"folderId\": 92581468,\n    \"parentGroupId\": 57591911,\n    \"iterative\": true\n}"
 												},
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/metafieldgroup?AccessKey=<API Key>",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafieldgroup?AccessKey=<API Key>",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"metafieldgroup"
@@ -2458,11 +2586,13 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/metafieldgrouplabel/:labelId",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafieldgrouplabel/:labelId",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"metafieldgrouplabel",
@@ -2484,11 +2614,13 @@
 														"method": "GET",
 														"header": [],
 														"url": {
-															"raw": "{{baseUrl}}/api/admin/metafieldgrouplabel/:labelId?AccessKey=<API Key>",
+															"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafieldgrouplabel/:labelId?AccessKey=<API Key>",
 															"host": [
 																"{{baseUrl}}"
 															],
 															"path": [
+																"digizuitecore",
+																"legacyservice",
 																"api",
 																"admin",
 																"metafieldgrouplabel",
@@ -2536,11 +2668,13 @@
 													"raw": "{\n    \"label\": \"voluptate\"\n}"
 												},
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/metafieldgrouplabel/:labelId",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafieldgrouplabel/:labelId",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"metafieldgrouplabel",
@@ -2566,11 +2700,13 @@
 															"raw": "{\n    \"label\": \"voluptate\"\n}"
 														},
 														"url": {
-															"raw": "{{baseUrl}}/api/admin/metafieldgrouplabel/:labelId?AccessKey=<API Key>",
+															"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafieldgrouplabel/:labelId?AccessKey=<API Key>",
 															"host": [
 																"{{baseUrl}}"
 															],
 															"path": [
+																"digizuitecore",
+																"legacyservice",
 																"api",
 																"admin",
 																"metafieldgrouplabel",
@@ -2611,11 +2747,13 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{baseUrl}}/api/admin/metafieldgrouplabel",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafieldgrouplabel",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"admin",
 												"metafieldgrouplabel"
@@ -2629,11 +2767,13 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/metafieldgrouplabel?AccessKey=<API Key>",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafieldgrouplabel?AccessKey=<API Key>",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"metafieldgrouplabel"
@@ -2675,11 +2815,13 @@
 											"raw": "{\n    \"label\": \"voluptate\"\n}"
 										},
 										"url": {
-											"raw": "{{baseUrl}}/api/admin/metafieldgrouplabel/:metafieldGroupId/:languageId",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafieldgrouplabel/:metafieldGroupId/:languageId",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"admin",
 												"metafieldgrouplabel",
@@ -2711,11 +2853,13 @@
 													"raw": "{\n    \"label\": \"voluptate\"\n}"
 												},
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/metafieldgrouplabel/:metafieldGroupId/:languageId?AccessKey=<API Key>",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafieldgrouplabel/:metafieldGroupId/:languageId?AccessKey=<API Key>",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"metafieldgrouplabel",
@@ -2766,11 +2910,13 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/metafieldlabel/:labelId",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafieldlabel/:labelId",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"metafieldlabel",
@@ -2792,11 +2938,13 @@
 														"method": "GET",
 														"header": [],
 														"url": {
-															"raw": "{{baseUrl}}/api/admin/metafieldlabel/:labelId?AccessKey=<API Key>",
+															"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafieldlabel/:labelId?AccessKey=<API Key>",
 															"host": [
 																"{{baseUrl}}"
 															],
 															"path": [
+																"digizuitecore",
+																"legacyservice",
 																"api",
 																"admin",
 																"metafieldlabel",
@@ -2844,11 +2992,13 @@
 													"raw": "{\n    \"label\": \"aliquip proiden\",\n    \"description\": \"fugiat nulla cupidatat\"\n}"
 												},
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/metafieldlabel/:labelId",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafieldlabel/:labelId",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"metafieldlabel",
@@ -2874,11 +3024,13 @@
 															"raw": "{\n    \"label\": \"aliquip proiden\",\n    \"description\": \"fugiat nulla cupidatat\"\n}"
 														},
 														"url": {
-															"raw": "{{baseUrl}}/api/admin/metafieldlabel/:labelId?AccessKey=<API Key>",
+															"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafieldlabel/:labelId?AccessKey=<API Key>",
 															"host": [
 																"{{baseUrl}}"
 															],
 															"path": [
+																"digizuitecore",
+																"legacyservice",
 																"api",
 																"admin",
 																"metafieldlabel",
@@ -2919,11 +3071,13 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{baseUrl}}/api/admin/metafieldlabel",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafieldlabel",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"admin",
 												"metafieldlabel"
@@ -2937,11 +3091,13 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/metafieldlabel?AccessKey=<API Key>",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafieldlabel?AccessKey=<API Key>",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"metafieldlabel"
@@ -2974,11 +3130,13 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{baseUrl}}/api/admin/metafieldlabel/metafield/:metafieldId",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafieldlabel/metafield/:metafieldId",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"admin",
 												"metafieldlabel",
@@ -3001,11 +3159,13 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/metafieldlabel/metafield/:metafieldId?AccessKey=<API Key>",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafieldlabel/metafield/:metafieldId?AccessKey=<API Key>",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"metafieldlabel",
@@ -3054,11 +3214,13 @@
 											"raw": "{\n    \"label\": \"aliquip proiden\",\n    \"description\": \"fugiat nulla cupidatat\"\n}"
 										},
 										"url": {
-											"raw": "{{baseUrl}}/api/admin/metafieldlabel/:metafieldId/:languageId",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafieldlabel/:metafieldId/:languageId",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"admin",
 												"metafieldlabel",
@@ -3090,11 +3252,13 @@
 													"raw": "{\n    \"label\": \"aliquip proiden\",\n    \"description\": \"fugiat nulla cupidatat\"\n}"
 												},
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/metafieldlabel/:metafieldId/:languageId?AccessKey=<API Key>",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/metafieldlabel/:metafieldId/:languageId?AccessKey=<API Key>",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"metafieldlabel",
@@ -3157,11 +3321,13 @@
 															"raw": "{\n    \"name\": \"reprehenderit enim cons\"\n}"
 														},
 														"url": {
-															"raw": "{{baseUrl}}/api/admin/products/versions/:versionGuid",
+															"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/products/versions/:versionGuid",
 															"host": [
 																"{{baseUrl}}"
 															],
 															"path": [
+																"digizuitecore",
+																"legacyservice",
 																"api",
 																"admin",
 																"products",
@@ -3188,11 +3354,13 @@
 																	"raw": "{\n    \"name\": \"reprehenderit enim cons\"\n}"
 																},
 																"url": {
-																	"raw": "{{baseUrl}}/api/admin/products/versions/:versionGuid?AccessKey=<API Key>",
+																	"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/products/versions/:versionGuid?AccessKey=<API Key>",
 																	"host": [
 																		"{{baseUrl}}"
 																	],
 																	"path": [
+																		"digizuitecore",
+																		"legacyservice",
 																		"api",
 																		"admin",
 																		"products",
@@ -3232,11 +3400,13 @@
 														"method": "DELETE",
 														"header": [],
 														"url": {
-															"raw": "{{baseUrl}}/api/admin/products/versions/:versionGuid",
+															"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/products/versions/:versionGuid",
 															"host": [
 																"{{baseUrl}}"
 															],
 															"path": [
+																"digizuitecore",
+																"legacyservice",
 																"api",
 																"admin",
 																"products",
@@ -3259,11 +3429,13 @@
 																"method": "DELETE",
 																"header": [],
 																"url": {
-																	"raw": "{{baseUrl}}/api/admin/products/versions/:versionGuid?AccessKey=<API Key>",
+																	"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/products/versions/:versionGuid?AccessKey=<API Key>",
 																	"host": [
 																		"{{baseUrl}}"
 																	],
 																	"path": [
+																		"digizuitecore",
+																		"legacyservice",
 																		"api",
 																		"admin",
 																		"products",
@@ -3303,11 +3475,13 @@
 														"method": "GET",
 														"header": [],
 														"url": {
-															"raw": "{{baseUrl}}/api/admin/products/versions/:versionGuid",
+															"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/products/versions/:versionGuid",
 															"host": [
 																"{{baseUrl}}"
 															],
 															"path": [
+																"digizuitecore",
+																"legacyservice",
 																"api",
 																"admin",
 																"products",
@@ -3330,11 +3504,13 @@
 																"method": "GET",
 																"header": [],
 																"url": {
-																	"raw": "{{baseUrl}}/api/admin/products/versions/:versionGuid?AccessKey=<API Key>",
+																	"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/products/versions/:versionGuid?AccessKey=<API Key>",
 																	"host": [
 																		"{{baseUrl}}"
 																	],
 																	"path": [
+																		"digizuitecore",
+																		"legacyservice",
 																		"api",
 																		"admin",
 																		"products",
@@ -3385,11 +3561,13 @@
 													"raw": "{\n    \"parentVersionId\": \"minim \",\n    \"name\": \"dolore dolor officia\"\n}"
 												},
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/products/versions",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/products/versions",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"products",
@@ -3408,11 +3586,13 @@
 															"raw": "{\n    \"parentVersionId\": \"minim \",\n    \"name\": \"dolore dolor officia\"\n}"
 														},
 														"url": {
-															"raw": "{{baseUrl}}/api/admin/products/versions?AccessKey=<API Key>",
+															"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/products/versions?AccessKey=<API Key>",
 															"host": [
 																"{{baseUrl}}"
 															],
 															"path": [
+																"digizuitecore",
+																"legacyservice",
 																"api",
 																"admin",
 																"products",
@@ -3446,11 +3626,13 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/products/versions",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/products/versions",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"products",
@@ -3465,11 +3647,13 @@
 														"method": "GET",
 														"header": [],
 														"url": {
-															"raw": "{{baseUrl}}/api/admin/products/versions?AccessKey=<API Key>",
+															"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/products/versions?AccessKey=<API Key>",
 															"host": [
 																"{{baseUrl}}"
 															],
 															"path": [
+																"digizuitecore",
+																"legacyservice",
 																"api",
 																"admin",
 																"products",
@@ -3517,11 +3701,13 @@
 													"raw": "{\n    \"name\": \"deserunt sunt aliqua\",\n    \"sortIndex\": -98825284,\n    \"itemMetafieldGroupId\": -78984710\n}"
 												},
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/products/:productGuid",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/products/:productGuid",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"products",
@@ -3547,11 +3733,13 @@
 															"raw": "{\n    \"name\": \"deserunt sunt aliqua\",\n    \"sortIndex\": -98825284,\n    \"itemMetafieldGroupId\": -78984710\n}"
 														},
 														"url": {
-															"raw": "{{baseUrl}}/api/admin/products/:productGuid?AccessKey=<API Key>",
+															"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/products/:productGuid?AccessKey=<API Key>",
 															"host": [
 																"{{baseUrl}}"
 															],
 															"path": [
+																"digizuitecore",
+																"legacyservice",
 																"api",
 																"admin",
 																"products",
@@ -3590,11 +3778,13 @@
 												"method": "DELETE",
 												"header": [],
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/products/:productGuid",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/products/:productGuid",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"products",
@@ -3616,11 +3806,13 @@
 														"method": "DELETE",
 														"header": [],
 														"url": {
-															"raw": "{{baseUrl}}/api/admin/products/:productGuid?AccessKey=<API Key>",
+															"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/products/:productGuid?AccessKey=<API Key>",
 															"host": [
 																"{{baseUrl}}"
 															],
 															"path": [
+																"digizuitecore",
+																"legacyservice",
 																"api",
 																"admin",
 																"products",
@@ -3659,11 +3851,13 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/products/:productGuid",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/products/:productGuid",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"products",
@@ -3685,11 +3879,13 @@
 														"method": "GET",
 														"header": [],
 														"url": {
-															"raw": "{{baseUrl}}/api/admin/products/:productGuid?AccessKey=<API Key>",
+															"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/products/:productGuid?AccessKey=<API Key>",
 															"host": [
 																"{{baseUrl}}"
 															],
 															"path": [
+																"digizuitecore",
+																"legacyservice",
 																"api",
 																"admin",
 																"products",
@@ -3739,11 +3935,13 @@
 											"raw": "{\n    \"name\": \"mollit laboris minim\",\n    \"sortIndex\": 14501603,\n    \"itemMetafieldGroupId\": -27154112,\n    \"versionName\": \"occaecat incididunt est qui\"\n}"
 										},
 										"url": {
-											"raw": "{{baseUrl}}/api/admin/products",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/products",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"admin",
 												"products"
@@ -3761,11 +3959,13 @@
 													"raw": "{\n    \"name\": \"mollit laboris minim\",\n    \"sortIndex\": 14501603,\n    \"itemMetafieldGroupId\": -27154112,\n    \"versionName\": \"occaecat incididunt est qui\"\n}"
 												},
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/products?AccessKey=<API Key>",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/products?AccessKey=<API Key>",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"products"
@@ -3798,11 +3998,13 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{baseUrl}}/api/admin/products",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/products",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"admin",
 												"products"
@@ -3816,11 +4018,13 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/products?AccessKey=<API Key>",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/products?AccessKey=<API Key>",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"products"
@@ -3853,11 +4057,13 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{baseUrl}}/api/admin/products/by_version/:versionGuid",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/products/by_version/:versionGuid",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"admin",
 												"products",
@@ -3880,11 +4086,13 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/products/by_version/:versionGuid?AccessKey=<API Key>",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/products/by_version/:versionGuid?AccessKey=<API Key>",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"products",
@@ -3932,11 +4140,13 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/tree-nodes/:treeNodeId",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/tree-nodes/:treeNodeId",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"tree-nodes",
@@ -3958,11 +4168,13 @@
 														"method": "GET",
 														"header": [],
 														"url": {
-															"raw": "{{baseUrl}}/api/admin/tree-nodes/:treeNodeId?AccessKey=<API Key>",
+															"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/tree-nodes/:treeNodeId?AccessKey=<API Key>",
 															"host": [
 																"{{baseUrl}}"
 															],
 															"path": [
+																"digizuitecore",
+																"legacyservice",
 																"api",
 																"admin",
 																"tree-nodes",
@@ -4010,11 +4222,13 @@
 													"raw": "{\n    \"optionValue\": \"tempor in ex in\",\n    \"parentId\": -85336189,\n    \"sortIndex\": 83296465,\n    \"treeNodeId\": -69043448\n}"
 												},
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/tree-nodes/:treeNodeId",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/tree-nodes/:treeNodeId",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"tree-nodes",
@@ -4040,11 +4254,13 @@
 															"raw": "{\n    \"optionValue\": \"tempor in ex in\",\n    \"parentId\": -85336189,\n    \"sortIndex\": 83296465,\n    \"treeNodeId\": -69043448\n}"
 														},
 														"url": {
-															"raw": "{{baseUrl}}/api/admin/tree-nodes/:treeNodeId?AccessKey=<API Key>",
+															"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/tree-nodes/:treeNodeId?AccessKey=<API Key>",
 															"host": [
 																"{{baseUrl}}"
 															],
 															"path": [
+																"digizuitecore",
+																"legacyservice",
 																"api",
 																"admin",
 																"tree-nodes",
@@ -4083,11 +4299,13 @@
 												"method": "DELETE",
 												"header": [],
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/tree-nodes/:treeNodeId?synchronous=true",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/tree-nodes/:treeNodeId?synchronous=true",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"tree-nodes",
@@ -4115,11 +4333,13 @@
 														"method": "DELETE",
 														"header": [],
 														"url": {
-															"raw": "{{baseUrl}}/api/admin/tree-nodes/:treeNodeId?synchronous=true&AccessKey=<API Key>",
+															"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/tree-nodes/:treeNodeId?synchronous=true&AccessKey=<API Key>",
 															"host": [
 																"{{baseUrl}}"
 															],
 															"path": [
+																"digizuitecore",
+																"legacyservice",
 																"api",
 																"admin",
 																"tree-nodes",
@@ -4171,11 +4391,13 @@
 													"raw": "{\n    \"label\": \"do laboris\"\n}"
 												},
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/tree-nodes/:treeNodeId/:languageId",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/tree-nodes/:treeNodeId/:languageId",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"tree-nodes",
@@ -4207,11 +4429,13 @@
 															"raw": "{\n    \"label\": \"do laboris\"\n}"
 														},
 														"url": {
-															"raw": "{{baseUrl}}/api/admin/tree-nodes/:treeNodeId/:languageId?AccessKey=<API Key>",
+															"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/tree-nodes/:treeNodeId/:languageId?AccessKey=<API Key>",
 															"host": [
 																"{{baseUrl}}"
 															],
 															"path": [
+																"digizuitecore",
+																"legacyservice",
 																"api",
 																"admin",
 																"tree-nodes",
@@ -4265,11 +4489,13 @@
 											"raw": "{\n    \"optionValue\": \"ullamco\",\n    \"parentId\": 19229999,\n    \"sortIndex\": 98968984,\n    \"metaFieldId\": 7115574,\n    \"labels\": [\n        {\n            \"languageId\": 76224609,\n            \"label\": \"ullamco dolore in voluptate\"\n        },\n        {\n            \"languageId\": -4335628,\n            \"label\": \"irure id sunt Excepteur in\"\n        }\n    ]\n}"
 										},
 										"url": {
-											"raw": "{{baseUrl}}/api/admin/tree-nodes",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/tree-nodes",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"admin",
 												"tree-nodes"
@@ -4287,11 +4513,13 @@
 													"raw": "{\n    \"optionValue\": \"consectetur veniam\",\n    \"parentId\": 56373423,\n    \"sortIndex\": -14882419,\n    \"metaFieldId\": -44337905,\n    \"labels\": [\n        {\n            \"languageId\": -80889859,\n            \"label\": \"ad co\"\n        },\n        {\n            \"languageId\": -78220840,\n            \"label\": \"ex tempor nulla\"\n        }\n    ]\n}"
 												},
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/tree-nodes?AccessKey=<API Key>",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/tree-nodes?AccessKey=<API Key>",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"tree-nodes"
@@ -4324,11 +4552,13 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{baseUrl}}/api/admin/tree-nodes",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/tree-nodes",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"admin",
 												"tree-nodes"
@@ -4342,11 +4572,13 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/tree-nodes?AccessKey=<API Key>",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/tree-nodes?AccessKey=<API Key>",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"tree-nodes"
@@ -4388,11 +4620,13 @@
 											"raw": "[\n    {\n        \"optionValue\": \"sed consequat proident occaecat\",\n        \"parentId\": -35243717,\n        \"sortIndex\": -4364935,\n        \"metaFieldId\": 61373674,\n        \"labels\": [\n            {\n                \"languageId\": 75971319,\n                \"label\": \"occaecat magna\"\n            },\n            {\n                \"languageId\": -20681500,\n                \"label\": \"id anim Lorem ut\"\n            }\n        ]\n    },\n    {\n        \"optionValue\": \"sint eu ex\",\n        \"parentId\": -710734,\n        \"sortIndex\": -82890394,\n        \"metaFieldId\": 27450792,\n        \"labels\": [\n            {\n                \"languageId\": 16821434,\n                \"label\": \"fugiat amet anim\"\n            },\n            {\n                \"languageId\": 73249549,\n                \"label\": \"ea aliqua\"\n            }\n        ]\n    }\n]"
 										},
 										"url": {
-											"raw": "{{baseUrl}}/api/admin/tree-nodes/bulk-create",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/tree-nodes/bulk-create",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"admin",
 												"tree-nodes",
@@ -4411,11 +4645,13 @@
 													"raw": "[\n    {\n        \"optionValue\": \"nisi pariatur esse velit\",\n        \"parentId\": -41639324,\n        \"sortIndex\": 5718712,\n        \"metaFieldId\": 56048593,\n        \"labels\": [\n            {\n                \"languageId\": 47244738,\n                \"label\": \"do minim quis anim\"\n            },\n            {\n                \"languageId\": 61783382,\n                \"label\": \"proident aute deserunt\"\n            }\n        ]\n    },\n    {\n        \"optionValue\": \"Duis exercitation ad id\",\n        \"parentId\": 87465801,\n        \"sortIndex\": 97404998,\n        \"metaFieldId\": 32838178,\n        \"labels\": [\n            {\n                \"languageId\": -79240455,\n                \"label\": \"magna id\"\n            },\n            {\n                \"languageId\": 18050626,\n                \"label\": \"id dolore culpa\"\n            }\n        ]\n    }\n]"
 												},
 												"url": {
-													"raw": "{{baseUrl}}/api/admin/tree-nodes/bulk-create?AccessKey=<API Key>",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/admin/tree-nodes/bulk-create?AccessKey=<API Key>",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"admin",
 														"tree-nodes",
@@ -4459,11 +4695,13 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{baseUrl}}/api/combo/values/metafield/:metafieldId",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/combo/values/metafield/:metafieldId",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"combo",
 												"values",
@@ -4486,11 +4724,13 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{baseUrl}}/api/combo/values/metafield/:metafieldId?AccessKey=<API Key>",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/combo/values/metafield/:metafieldId?AccessKey=<API Key>",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"combo",
 														"values",
@@ -4530,11 +4770,13 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{baseUrl}}/api/combo/values/metafield/:metafieldId/assignable",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/combo/values/metafield/:metafieldId/assignable",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"combo",
 												"values",
@@ -4558,11 +4800,13 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{baseUrl}}/api/combo/values/metafield/:metafieldId/assignable?AccessKey=<API Key>",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/combo/values/metafield/:metafieldId/assignable?AccessKey=<API Key>",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"combo",
 														"values",
@@ -4608,11 +4852,13 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{baseUrl}}/api/combo/values/metafield/:metaFieldItemGuid",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/combo/values/metafield/:metaFieldItemGuid",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"combo",
 												"values",
@@ -4635,11 +4881,13 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{baseUrl}}/api/combo/values/metafield/:metaFieldItemGuid?AccessKey=<API Key>",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/combo/values/metafield/:metaFieldItemGuid?AccessKey=<API Key>",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"combo",
 														"values",
@@ -4679,11 +4927,13 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{baseUrl}}/api/combo/values/metafield/:metaFieldItemGuid/assignable",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/combo/values/metafield/:metaFieldItemGuid/assignable",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"combo",
 												"values",
@@ -4707,11 +4957,13 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{baseUrl}}/api/combo/values/metafield/:metaFieldItemGuid/assignable?AccessKey=<API Key>",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/combo/values/metafield/:metaFieldItemGuid/assignable?AccessKey=<API Key>",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"combo",
 														"values",
@@ -4768,11 +5020,13 @@
 									"raw": "{\n    \"updates\": [\n        {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        }\n    ]\n}"
 								},
 								"url": {
-									"raw": "{{baseUrl}}/api/metadata/update",
+									"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/metadata/update",
 									"host": [
 										"{{baseUrl}}"
 									],
 									"path": [
+										"digizuitecore",
+										"legacyservice",
 										"api",
 										"metadata",
 										"update"
@@ -4790,11 +5044,13 @@
 											"raw": "{\n    \"updates\": [\n        {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        }\n    ]\n}"
 										},
 										"url": {
-											"raw": "{{baseUrl}}/api/metadata/update?AccessKey=<API Key>",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/metadata/update?AccessKey=<API Key>",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"metadata",
 												"update"
@@ -4836,11 +5092,13 @@
 									"raw": "{\n    \"itemIds\": [\n        -56982135\n    ],\n    \"labelIds\": [\n        -21014984,\n        14299640\n    ],\n    \"fieldItemIds\": [\n        26178966,\n        -66763731\n    ],\n    \"fieldItemGuids\": [\n        \"urn:uuid:096d406e-2a1a-2034-e521-5ad3e9ef1624\",\n        \"urn:uuid:f1cb0e15-d2fd-db51-bdf9-54725ed6fc0a\"\n    ],\n    \"groupIds\": [\n        -8197565,\n        -78486405\n    ],\n    \"onlyShowInList\": true,\n    \"languages\": [\n        -34936770,\n        -34929400\n    ]\n}"
 								},
 								"url": {
-									"raw": "{{baseUrl}}/api/metadata/editor",
+									"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/metadata/editor",
 									"host": [
 										"{{baseUrl}}"
 									],
 									"path": [
+										"digizuitecore",
+										"legacyservice",
 										"api",
 										"metadata",
 										"editor"
@@ -4858,11 +5116,13 @@
 											"raw": "{\n    \"itemIds\": [\n        66934684\n    ],\n    \"labelIds\": [\n        62891683,\n        -79669711\n    ],\n    \"fieldItemIds\": [\n        -95734160,\n        -32206692\n    ],\n    \"fieldItemGuids\": [\n        \"491d2e24-5c05-39e3-7abd-ea05b75c29e3\",\n        \"urn:uuid:f6235536-37ba-c66d-6ffe-aba866765ab4\"\n    ],\n    \"groupIds\": [\n        -33313972,\n        74425222\n    ],\n    \"onlyShowInList\": false,\n    \"languages\": [\n        98196820,\n        -41786830\n    ]\n}"
 										},
 										"url": {
-											"raw": "{{baseUrl}}/api/metadata/editor?AccessKey=<API Key>",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/metadata/editor?AccessKey=<API Key>",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"metadata",
 												"editor"
@@ -4900,11 +5160,13 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{baseUrl}}/api/metafield?metaFieldItemGuids=0f707f9e-f1bd-68ec-b3f7-c5f6e73e84ab&metaFieldItemGuids=urn:uuid:8bcbcf28-f3ef-be0e-c5d6-4b1cd74af722&metaFieldTypes=68&metaFieldTypes=100&respectShowInList=false",
+									"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/metafield?metaFieldItemGuids=0f707f9e-f1bd-68ec-b3f7-c5f6e73e84ab&metaFieldItemGuids=urn:uuid:8bcbcf28-f3ef-be0e-c5d6-4b1cd74af722&metaFieldTypes=68&metaFieldTypes=100&respectShowInList=false",
 									"host": [
 										"{{baseUrl}}"
 									],
 									"path": [
+										"digizuitecore",
+										"legacyservice",
 										"api",
 										"metafield"
 									],
@@ -4939,11 +5201,13 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{baseUrl}}/api/metafield?metaFieldItemGuids=b270d897-425c-2319-d735-b29764261649&metaFieldItemGuids=a5865890-09d4-2706-3ff2-a49913800f3d&metaFieldTypes=81&metaFieldTypes=60&respectShowInList=false&AccessKey=<API Key>",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/metafield?metaFieldItemGuids=b270d897-425c-2319-d735-b29764261649&metaFieldItemGuids=a5865890-09d4-2706-3ff2-a49913800f3d&metaFieldTypes=81&metaFieldTypes=60&respectShowInList=false&AccessKey=<API Key>",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"metafield"
 											],
@@ -4995,11 +5259,13 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{baseUrl}}/api/metafield/asset-info?assetTypes=1&assetTypes=2",
+									"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/metafield/asset-info?assetTypes=1&assetTypes=2",
 									"host": [
 										"{{baseUrl}}"
 									],
 									"path": [
+										"digizuitecore",
+										"legacyservice",
 										"api",
 										"metafield",
 										"asset-info"
@@ -5023,11 +5289,13 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{baseUrl}}/api/metafield/asset-info?assetTypes=102&assetTypes=1000&AccessKey=<API Key>",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/metafield/asset-info?assetTypes=102&assetTypes=1000&AccessKey=<API Key>",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"metafield",
 												"asset-info"
@@ -5068,11 +5336,13 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{baseUrl}}/api/metafield/structure",
+									"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/metafield/structure",
 									"host": [
 										"{{baseUrl}}"
 									],
 									"path": [
+										"digizuitecore",
+										"legacyservice",
 										"api",
 										"metafield",
 										"structure"
@@ -5086,11 +5356,13 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{baseUrl}}/api/metafield/structure?AccessKey=<API Key>",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/metafield/structure?AccessKey=<API Key>",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"metafield",
 												"structure"
@@ -5134,11 +5406,13 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{baseUrl}}/api/tree/nodes/metafield/:metafieldId",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/tree/nodes/metafield/:metafieldId",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"tree",
 														"nodes",
@@ -5161,11 +5435,13 @@
 														"method": "GET",
 														"header": [],
 														"url": {
-															"raw": "{{baseUrl}}/api/tree/nodes/metafield/:metafieldId?AccessKey=<API Key>",
+															"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/tree/nodes/metafield/:metafieldId?AccessKey=<API Key>",
 															"host": [
 																"{{baseUrl}}"
 															],
 															"path": [
+																"digizuitecore",
+																"legacyservice",
 																"api",
 																"tree",
 																"nodes",
@@ -5205,11 +5481,13 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{baseUrl}}/api/tree/nodes/metafield/:metafieldId/assignable",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/tree/nodes/metafield/:metafieldId/assignable",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"tree",
 														"nodes",
@@ -5233,11 +5511,13 @@
 														"method": "GET",
 														"header": [],
 														"url": {
-															"raw": "{{baseUrl}}/api/tree/nodes/metafield/:metafieldId/assignable?AccessKey=<API Key>",
+															"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/tree/nodes/metafield/:metafieldId/assignable?AccessKey=<API Key>",
 															"host": [
 																"{{baseUrl}}"
 															],
 															"path": [
+																"digizuitecore",
+																"legacyservice",
 																"api",
 																"tree",
 																"nodes",
@@ -5283,11 +5563,13 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{baseUrl}}/api/tree/nodes/metafield/:metaFieldItemGuid",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/tree/nodes/metafield/:metaFieldItemGuid",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"tree",
 														"nodes",
@@ -5310,11 +5592,13 @@
 														"method": "GET",
 														"header": [],
 														"url": {
-															"raw": "{{baseUrl}}/api/tree/nodes/metafield/:metaFieldItemGuid?AccessKey=<API Key>",
+															"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/tree/nodes/metafield/:metaFieldItemGuid?AccessKey=<API Key>",
 															"host": [
 																"{{baseUrl}}"
 															],
 															"path": [
+																"digizuitecore",
+																"legacyservice",
 																"api",
 																"tree",
 																"nodes",
@@ -5354,11 +5638,13 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{baseUrl}}/api/tree/nodes/metafield/:metaFieldItemGuid/assignable",
+													"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/tree/nodes/metafield/:metaFieldItemGuid/assignable",
 													"host": [
 														"{{baseUrl}}"
 													],
 													"path": [
+														"digizuitecore",
+														"legacyservice",
 														"api",
 														"tree",
 														"nodes",
@@ -5382,11 +5668,13 @@
 														"method": "GET",
 														"header": [],
 														"url": {
-															"raw": "{{baseUrl}}/api/tree/nodes/metafield/:metaFieldItemGuid/assignable?AccessKey=<API Key>",
+															"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/tree/nodes/metafield/:metaFieldItemGuid/assignable?AccessKey=<API Key>",
 															"host": [
 																"{{baseUrl}}"
 															],
 															"path": [
+																"digizuitecore",
+																"legacyservice",
 																"api",
 																"tree",
 																"nodes",
@@ -5431,11 +5719,13 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{baseUrl}}/api/tree/nodes/itemid/:itemId",
+									"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/tree/nodes/itemid/:itemId",
 									"host": [
 										"{{baseUrl}}"
 									],
 									"path": [
+										"digizuitecore",
+										"legacyservice",
 										"api",
 										"tree",
 										"nodes",
@@ -5458,11 +5748,13 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{baseUrl}}/api/tree/nodes/itemid/:itemId?AccessKey=<API Key>",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/tree/nodes/itemid/:itemId?AccessKey=<API Key>",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"tree",
 												"nodes",
@@ -5502,11 +5794,13 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{baseUrl}}/api/tree/nodes/item/:itemId",
+									"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/tree/nodes/item/:itemId",
 									"host": [
 										"{{baseUrl}}"
 									],
 									"path": [
+										"digizuitecore",
+										"legacyservice",
 										"api",
 										"tree",
 										"nodes",
@@ -5529,11 +5823,13 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{baseUrl}}/api/tree/nodes/item/:itemId?AccessKey=<API Key>",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/tree/nodes/item/:itemId?AccessKey=<API Key>",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"tree",
 												"nodes",
@@ -5573,11 +5869,13 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{baseUrl}}/api/tree/nodes/labelId/:labelId",
+									"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/tree/nodes/labelId/:labelId",
 									"host": [
 										"{{baseUrl}}"
 									],
 									"path": [
+										"digizuitecore",
+										"legacyservice",
 										"api",
 										"tree",
 										"nodes",
@@ -5600,11 +5898,13 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{baseUrl}}/api/tree/nodes/labelId/:labelId?AccessKey=<API Key>",
+											"raw": "{{baseUrl}}/digizuitecore/legacyservice/api/tree/nodes/labelId/:labelId?AccessKey=<API Key>",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
+												"digizuitecore",
+												"legacyservice",
 												"api",
 												"tree",
 												"nodes",
@@ -5686,7 +5986,7 @@
 	"variable": [
 		{
 			"key": "baseUrl",
-			"value": "https://dmo12-dc.digizuitedam.com/digizuitecore/legacyservice"
+			"value": "https://dmo12-dc.digizuitedam.com"
 		},
 		{
 			"key": "username",
@@ -5699,10 +5999,6 @@
 		{
 			"key": "accessKey",
 			"value": ""
-		},
-		{
-			"key": "baseAuthUrl",
-			"value": "https://dmo12-dc.digizuitedam.com"
 		}
 	]
 }
