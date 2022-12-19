@@ -4,7 +4,9 @@ Digizuite AW External Action Registration
 
 ## Description
 
-This projects shows how to register an AW External Action (Requires at least 5.6.0)
+This projects contains two json collections for Digizuite API (Requires at least 5.6.0).
+- The 'Digizuite DC 5.6 API postman collection.json' is our main API (documented here: https://digizuite.atlassian.net/wiki/spaces/DD/pages/3000406852/DC+5.6+API+Documentation)
+- The 'New Digizuite Content Search API_5.6.1_.postman_collection' is for our new content search API which is only from 5.6.1 and can be **subject to change**.
 
 ## Getting Started
 
