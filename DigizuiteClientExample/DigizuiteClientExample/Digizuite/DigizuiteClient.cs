@@ -41,7 +41,6 @@ namespace DigizuiteClientExample.Digizuite
         private int _portalMenuMetafieldLId = -1;
 
         private readonly int _portalMenuLanguageId = 3; // 3: English by default
-        private readonly int _damChannelFolderId = -1;
 
         public DigizuiteClient()
         {
@@ -103,12 +102,9 @@ namespace DigizuiteClientExample.Digizuite
         {
             var parameters = new SearchParameters("GetAssets");
 
-           // parameters.Add("sChannelFolderId", _damChannelFolderId);
-
             int parentFolderId = 0;
             if (!string.IsNullOrWhiteSpace(parentId)
-                && int.TryParse(parentId, out parentFolderId)
-                /*&& parentFolderId != _damChannelFolderId*/)
+                && int.TryParse(parentId, out parentFolderId))
             {
                 parameters.Add("sMenu", new List<int> { parentFolderId });
             }
