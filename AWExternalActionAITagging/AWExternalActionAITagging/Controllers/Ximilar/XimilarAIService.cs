@@ -29,11 +29,11 @@ namespace AWExternalActionAITagging.Controllers.Ximilar
         ///  <param name="clientId"></param>
         /// <returns></returns>
         /// <exception cref="Exception"></exception>
-        public async Task<DigizuiteTagResponse> XimilarFashionAiTagging(string assetId)
+        public async Task<DigizuiteTagResponse> XimilarFashionAiTagging(int assetId)
         {
             
             // Get asset using the client
-            var asset = await _assetService.GetAssetByAssetId(int.Parse(assetId));
+            var asset = await _assetService.GetAssetByAssetId(assetId);
 
             var records = new [] {new XimilarDetectTagsUrl(asset.ImagePreview)};
             var request = new XimilarDetectTagsRequest(records);
@@ -58,23 +58,11 @@ namespace AWExternalActionAITagging.Controllers.Ximilar
                     errorMessage = "No tags found"
                 };
             }
-            
-            // Gets the records
+
+            // Go fetch all the specific types we are interested in.
+            // Then wrap it all up and send it.
             var allTags = tagsResponse.records.First()._tags ?? new XimilarFashionDetectObject();
-
-            // Go fetch all the specific types we are interested in
-            var filteredCats = FilterAndReturnListFashionTags(allTags.Category, "category");
-            var filteredColors = FilterAndReturnListFashionTags(allTags.Color, "color");
-            var filteredStyle = FilterAndReturnListFashionTags(allTags.Style, "style");
-            var filteredSubCats = FilterAndReturnListFashionTags(allTags.Subcategory, "subCategory");
-            var filteredDesign = FilterAndReturnListFashionTags(allTags.Design, "design");
-            var filteredClosure = FilterAndReturnListFashionTags(allTags.Closure, "closure");
-            var filteredFastening = FilterAndReturnListFashionTags(allTags.Fastening, "fastening");
-            var filteredType = FilterAndReturnListFashionTags(allTags.Type, "type");
-
-            // Wrap it all up and send it
-            var ximilarDetectTagObjects = filteredCats.Concat(filteredColors).Concat(filteredStyle)
-                .Concat(filteredSubCats).Concat(filteredDesign).Concat(filteredClosure).Concat(filteredFastening).Concat(filteredType).ToList();
+            var ximilarDetectTagObjects = GetDetectTagObjects(allTags);
             var digizuiteTagRes = new DigizuiteTagResponse()
             {
                 tags = ximilarDetectTagObjects.Select((tObject) => new DetectTagObject
@@ -92,6 +80,24 @@ namespace AWExternalActionAITagging.Controllers.Ximilar
         }
 
         #region MyRegion
+
+        private static List<XimilarFashionDetectTagObject> GetDetectTagObjects(XimilarFashionDetectObject allTags)
+        {
+            var filteredCats = FilterAndReturnListFashionTags(allTags.Category, "category");
+            var filteredColors = FilterAndReturnListFashionTags(allTags.Color, "color");
+            var filteredStyle = FilterAndReturnListFashionTags(allTags.Style, "style");
+            var filteredSubCats = FilterAndReturnListFashionTags(allTags.Subcategory, "subCategory");
+            var filteredDesign = FilterAndReturnListFashionTags(allTags.Design, "design");
+            var filteredClosure = FilterAndReturnListFashionTags(allTags.Closure, "closure");
+            var filteredFastening = FilterAndReturnListFashionTags(allTags.Fastening, "fastening");
+            var filteredType = FilterAndReturnListFashionTags(allTags.Type, "type");
+
+            // Wrap it all up and send it
+            var ximilarDetectTagObjects = filteredCats.Concat(filteredColors).Concat(filteredStyle)
+                .Concat(filteredSubCats).Concat(filteredDesign).Concat(filteredClosure).Concat(filteredFastening).Concat(filteredType).ToList();
+
+            return ximilarDetectTagObjects;
+        }
         
         private static async Task<string> ValidateAndGetResponse(HttpResponseMessage response)
         {

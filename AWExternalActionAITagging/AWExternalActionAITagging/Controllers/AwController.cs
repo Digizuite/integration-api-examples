@@ -1,4 +1,4 @@
-﻿using System.Net.Http;
+﻿using System.Threading.Tasks;
 using AWExternalActionAITagging.Controllers.Ximilar;
 using Digizuite.AutomationWorkflows;
 using Microsoft.AspNetCore.Mvc;
@@ -17,18 +17,17 @@ namespace AWExternalActionAITagging.Controllers
         }
 
         [HttpPost("ximilarfashiontagging")]
-        public ExternalInvocationResponseBody<IsLuckyResponse> IsLucky(
-            [FromBody] ExternalInvocationRequestBody<IsLuckyRequest> request)
+        public async Task<ExternalInvocationResponseBody<DigizuiteTagResponse>> IsLucky(
+            [FromBody] ExternalInvocationRequestBody<XimilarAiTaggingRequest> request)
         {
-            var isLucky = request.Arguments.Number == 7;
-            return new ExternalInvocationResponseBody<IsLuckyResponse>(new IsLuckyResponse())
+            var detectedTags = await _ximilarAiService.XimilarFashionAiTagging(request.Arguments.AssetId);
+            
+            return new ExternalInvocationResponseBody<DigizuiteTagResponse>(detectedTags)
             {
-                Passed = isLucky
+                Passed = true
             };
         }
     }
 
-    public record IsLuckyRequest(int Number);
-
-    public record IsLuckyResponse;
+    public record XimilarAiTaggingRequest(int AssetId);
 }
