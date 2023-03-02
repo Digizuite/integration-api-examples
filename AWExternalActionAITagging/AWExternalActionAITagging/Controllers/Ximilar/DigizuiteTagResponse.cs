@@ -3,6 +3,10 @@ using JetBrains.Annotations;
 
 namespace AWExternalActionAITagging.Controllers.Ximilar
 {
+    public class DigizuiteSimpleResponse {
+        public string tagsstring { get; set; }
+    }
+    
     public class DigizuiteTagResponse
     {
         public IEnumerable<DetectTagObject> tags;

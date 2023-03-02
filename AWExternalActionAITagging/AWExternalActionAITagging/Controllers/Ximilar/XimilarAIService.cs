@@ -15,7 +15,7 @@ namespace AWExternalActionAITagging.Controllers.Ximilar
         private readonly IHttpClientFactory _httpClientFactory;
         private readonly IAssetService _assetService;
 
-        private const string ApiKey = "YOUR_API_KEY";
+        private const string ApiKey = "YOUR_KEY";
 
         public XimilarAIService(IHttpClientFactory httpClientFactory, IAssetService assetService)
         {
@@ -26,14 +26,15 @@ namespace AWExternalActionAITagging.Controllers.Ximilar
         /// <summary>
         /// Gets asset by its asset id. From that asset it takes the image preview and fashion tags it
         /// </summary>
-        ///  <param name="clientId"></param>
+        ///  <param name="assetId"></param>
         /// <returns></returns>
         /// <exception cref="Exception"></exception>
-        public async Task<DigizuiteTagResponse> XimilarFashionAiTagging(int assetId)
+        public async Task<DigizuiteTagResponse> XimilarFashionAiTagging(string assetId)
         {
             
             // Get asset using the client
-            var asset = await _assetService.GetAssetByAssetId(assetId);
+            Console.WriteLine($"Looking for asset id {assetId}");
+            var asset = await _assetService.GetAssetByAssetId(int.Parse(assetId));
 
             var records = new [] {new XimilarDetectTagsUrl(asset.ImagePreview)};
             var request = new XimilarDetectTagsRequest(records);
@@ -115,14 +116,14 @@ namespace AWExternalActionAITagging.Controllers.Ximilar
             return contentStream;
         }
 
-        private static IEnumerable<XimilarFashionDetectTagObject> FilterAndReturnListFashionTags(IEnumerable<XimilarFashionDetectTagObject> subcategory, string type)
+        private static IEnumerable<XimilarFashionDetectTagObject> FilterAndReturnListFashionTags(IEnumerable<XimilarFashionDetectTagObject>? subcategory, string type)
         {
-            return subcategory.Where((label) => label.prob >= 0.6).Select(
+            return subcategory != null ? subcategory.Where((label) => label.prob >= 0.6).Select(
                 (cat) =>
                 {
                     cat.type = type;
                     return cat;
-                });
+                }) : new List<XimilarFashionDetectTagObject>();
         }        
 
         #endregion

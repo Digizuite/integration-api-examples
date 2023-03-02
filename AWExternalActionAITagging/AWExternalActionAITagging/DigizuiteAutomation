@@ -1,0 +1,31 @@
+﻿trigger "Specific Metadata Value" {
+	type = "Specific Metadata Value"
+	resolves = "Set String Metafield"
+	meta_field = "labelId:50723"
+	values = "Lollohollo"
+	ignore_casing = "true"
+	listen_to_metadata_changes = "all"
+}
+
+action "Ximilar AI Fashion Tagging" {
+	type = "Ximilar AI Fashion Tagging"
+	asset_id = "@sourceAssetId"
+	result = "@result"
+	tags = "@result"
+	outputs = "@result"
+	tagsstring = "@result"
+}
+
+action "Log" {
+	type = "Log"
+	needs = "Ximilar AI Fashion Tagging"
+	text = "@result"
+}
+
+action "Set String Metafield" {
+	type = "Set String Metafield"
+	needs = "Log"
+	meta_field = "labelId:50723"
+	new_value = "@result"
+	asset_item_ids = "@sourceAssetItemId"
+}
