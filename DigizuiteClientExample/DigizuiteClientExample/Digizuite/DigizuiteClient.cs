@@ -151,6 +151,16 @@ namespace DigizuiteClientExample.Digizuite
             return metaFields.FindAll(mf => metadaFieldIds.Contains(mf.Guid));
         }
 
+        public async Task<MetadataEditorResponse> GetMetadataForAssetItemId(int itemId)
+        {
+            var res = await _metadataValueService.GetRawMetadata(new GetMetadataRequest
+            {
+                ItemIds = new List<int>() {itemId}
+            });
+
+            return res;
+        }
+
         private void FetchMetafieldSettings()
         {
             int portalMenuLanguageId = -1;
